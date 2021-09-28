@@ -37,7 +37,7 @@ city_3_population = 2431000
 city_3_unemployment_rate = 3.3
 city_4_name = 'Mumbai'
 city_4_population = 18000000
-city_4_unemployment_rate = 3.3
+city_4_unemployment_rate = 29.2
 
 # note: Mind the indented structure of if clauses. It matters!!!!
 
@@ -78,14 +78,16 @@ print(result)
 
 
 # if, if elif and if else classes can be nested. Indentation plays the main role here
-if city_1_population > city_2_population:
-    if city_1_unemployment_rate > city_2_unemployment_rate:
-        result = city_1_name + ' is bigger and has a higher unemployment rate than ' + city_2_name
+if city_1_population > city_4_population:
+    if city_1_unemployment_rate > city_4_unemployment_rate:
+        result = city_1_name + ' is bigger and has a higher unemployment rate than ' + city_4_name
     else:
-        result = city_1_name + ' is bigger but has a lower unemployment rate than ' + city_2_name
+        result = city_1_name + ' is bigger but has a lower unemployment rate than ' + city_4_name
 else:
     if city_1_unemployment_rate > city_2_unemployment_rate:
-        result = city_2_name + ' is bigger and has a higher unemployment rate than ' + city_1_name
+        result = city_4_name + ' is bigger and has a higher unemployment rate than ' + city_1_name
     else:
-        result = city_2_name + ' is bigger but has a lower unemployment rate than ' + city_1_name
+        result = city_4_name + ' is bigger but has a lower unemployment rate than ' + city_1_name
+
+
 print(result)
